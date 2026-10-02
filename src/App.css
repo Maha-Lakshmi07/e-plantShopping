@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1000&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.landing_content {
+  flex: 1;
+  padding: 20px;
+}
+
+.landing_content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background-color: #4CAF50;
+  margin: 10px auto;
+}
+
+.landing_content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.get-started-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #45a049;
+}
+
+.aboutus_container {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.fade-out {
+  display: none;
+}
+
+.product-list-container {
+  display: none;
+}
+
+.product-list-container.visible {
+  display: block;
+  height: 100%;
+  overflow-y: auto;
+}
